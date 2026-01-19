@@ -6,9 +6,11 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+
 body {
   background: #140a2e;
 }
+
 
 /* NAVBAR */
 .navbar {
@@ -16,15 +18,18 @@ body {
   padding: 18px 0;
 }
 
+
 .nav-container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
 
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 /* LOGO */
 .logo {
@@ -33,9 +38,11 @@ body {
   color: white;
 }
 
+
 .logo span {
   color: #ff2fb2;
 }
+
 
 /* NAV LINKS (PC) */
 .nav-links {
@@ -44,15 +51,18 @@ body {
   gap: 30px;
 }
 
+
 .nav-links a {
   color: #cbd5e1;
   text-decoration: none;
   font-size: 16px;
 }
 
+
 .nav-links a:hover {
   color: white;
 }
+
 
 /* SUBSCRIBE BUTTON */
 .btn {
@@ -63,6 +73,7 @@ body {
   font-weight: 600;
 }
 
+
 /* HAMBURGER ICON */
 .menu-icon {
   display: none;
@@ -71,6 +82,7 @@ body {
   cursor: pointer;
 }
 
+
 .menu-icon span {
   width: 28px;
   height: 3px;
@@ -78,23 +90,28 @@ body {
   border-radius: 3px;
 }
 
+
 /* --------------------
    RESPONSIVE (MOBILE)
 --------------------- */
 @media (max-width: 576px) {
 
+
   .nav-links {
     display: none;
   }
+
 
   .menu-icon {
     display: flex;
   }
 
+
   .logo {
     font-size: 24px;
   }
 }
+
 
 /* HERO */
 .hero {
@@ -107,6 +124,7 @@ body {
   overflow: hidden;
 }
 
+
 /* WAVE BACKGROUND */
 .wave-bg {
   position: absolute;
@@ -116,6 +134,7 @@ body {
   z-index: 1;
 }
 
+
 /* CONTENT */
 .hero-content {
   position: relative;
@@ -123,6 +142,7 @@ body {
   text-align: center;
   padding: 20px;
 }
+
 
 /* CIRCLE WRAPPER */
 .circle-wrapper {
@@ -132,12 +152,14 @@ body {
   margin: 0 auto 30px;
 }
 
+
 /* GRADIENT CIRCLE */
 .circle-bg {
   max-width: 900px;
   height: 100%;
   border-radius: 50%;
 }
+
 
 /* MIC ICON */
 .mic-icon {
@@ -147,6 +169,7 @@ body {
   width: 90px;
   z-index: 3;
 }
+
 
 /* NEW BADGE */
 .badge {
@@ -162,6 +185,7 @@ body {
   z-index: 4;
 }
 
+
 /* TEXT */
 .hero h1 {
   color: white;
@@ -169,12 +193,14 @@ body {
   margin-bottom: 12px;
 }
 
+
 .subtitle {
   color: #cbd5e1;
   font-size: 16px;
   max-width: 520px;
   margin: 0 auto 30px;
 }
+
 
 /* BUTTONS */
 .hero-buttons {
@@ -184,6 +210,7 @@ body {
   flex-wrap: wrap;
 }
 
+
 .btn {
   padding: 12px 26px;
   border-radius: 30px;
@@ -192,39 +219,47 @@ body {
   font-size: 14px;
 }
 
+
 .primary {
   background: linear-gradient(90deg, #ff2fb2, #ff9f43);
   color: white;
 }
+
 
 .outline {
   border: 1px solid #22c55e;
   color: #22c55e;
 }
 
+
 /* --------------------
    RESPONSIVE
 -------------------- */
 @media (max-width: 576px) {
+
 
   .circle-wrapper {
     width: 180px;
     height: 180px;
   }
 
+
   .mic-icon {
     width: 70px;
   }
 
+
   .hero h1 {
     font-size: 36px;
   }
+
 
   .wave-bg {
    width: 100%;
     opacity: 0.7;
   }
 }
+
 
 /* ABOUT SECTION */
 .about {
@@ -233,10 +268,12 @@ body {
   text-align: center;
 }
 
+
 .about-container {
   max-width: 900px;
   margin: auto;
 }
+
 
 /* HEADING */
 .about h2 {
@@ -244,6 +281,7 @@ body {
   font-size: 40px;
   margin-bottom: 24px;
 }
+
 
 /* TEXT */
 .about-text {
@@ -253,6 +291,7 @@ body {
   margin-bottom: 16px;
 }
 
+
 /* DIVIDER */
 .divider {
   width: 100%;
@@ -261,12 +300,14 @@ body {
   margin: 60px 0;
 }
 
+
 /* STATS */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
+
 
 /* SINGLE STAT */
 .stat h3 {
@@ -275,36 +316,168 @@ body {
   margin-bottom: 8px;
 }
 
+
 .stat p {
   font-size: 14px;
   color: #94a3b8;
   letter-spacing: 0.5px;
 }
 
-/* --------------------
-   RESPONSIVE
--------------------- */
-@media (max-width: 900px) {
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 576px) {
   .about {
     padding: 70px 20px;
   }
 
+
   .about h2 {
     font-size: 32px;
   }
+
 
   .stats {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
+
   .stat h3 {
     font-size: 32px;
   }
 }
+
+
+.features {
+  padding: 100px 20px;
+  color: white;
+}
+
+
+.features-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.features h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+
+  grid-template-areas:
+    "audio mobile mobile"
+    "audio global global"
+    "interview interview resources";
+}
+
+
+.feature-card {
+  background: #2a124f;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+
+.feature-card img {
+  width: 36px;
+  margin-bottom: 16px;
+}
+
+
+.feature-card h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* GRID AREAS */
+.feature-card:nth-child(1) { grid-area: audio; }
+.feature-card:nth-child(2) { grid-area: mobile; }
+.feature-card:nth-child(3) { grid-area: global; }
+.feature-card:nth-child(4) { grid-area: interview; }
+.feature-card:nth-child(5) { grid-area: resources; }
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 576px) {
+
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: none;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .menu-icon {
+    display: flex;
+  }
+
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+
+  .circle-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+
+  .mic-icon {
+    width: 70px;
+  }
+
+
+  .about h2,
+  .features h2 {
+    font-size: 30px;
+  }
+
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
