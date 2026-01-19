@@ -1,0 +1,238 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #140a2e;
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(180deg, #1a0b3d, #120828);
+  padding: 18px 0;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.logo span {
+  color: #ff2fb2;
+}
+
+/* NAV LINKS (PC) */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* SUBSCRIBE BUTTON */
+.btn {
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff2fb2, #ff9f43);
+  color: white !important;
+  font-weight: 600;
+}
+
+/* HAMBURGER ICON */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+/* --------------------
+   RESPONSIVE (MOBILE)
+--------------------- */
+@media (max-width: 576px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #2a0e4e, #120828);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* WAVE BACKGROUND */
+.wave-bg {
+  position: absolute;
+  width: 100%;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+/* CIRCLE WRAPPER */
+.circle-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 30px;
+}
+
+/* GRADIENT CIRCLE */
+.circle-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* MIC ICON */
+.mic-icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 90px;
+  z-index: 3;
+}
+
+/* NEW BADGE */
+.badge {
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  background: #22c55e;
+  color: #052e16;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 4;
+}
+
+/* TEXT */
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto 30px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.primary {
+  background: linear-gradient(90deg, #ff2fb2, #ff9f43);
+  color: white;
+}
+
+.outline {
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}
+
+/* --------------------
+   RESPONSIVE
+-------------------- */
+@media (max-width: 576px) {
+
+  .circle-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .mic-icon {
+    width: 70px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .wave-bg {
+   width: 100%;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .wave-bg {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
