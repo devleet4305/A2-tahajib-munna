@@ -17,7 +17,7 @@ body {
 }
 
 .nav-container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 
@@ -134,7 +134,7 @@ body {
 
 /* GRADIENT CIRCLE */
 .circle-bg {
-  width: 100%;
+  max-width: 900px;
   height: 100%;
   border-radius: 50%;
 }
@@ -226,13 +226,85 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+/* ABOUT SECTION */
+.about {
+  background: radial-gradient(circle at top, #2a0e4e, #120828);
+  padding: 100px 20px;
+  text-align: center;
+}
 
-  .wave-bg {
-    display: none;
+.about-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* HEADING */
+.about h2 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+/* TEXT */
+.about-text {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* DIVIDER */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 60px 0;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* SINGLE STAT */
+.stat h3 {
+  font-size: 36px;
+  color: #22c55e;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+
+/* --------------------
+   RESPONSIVE
+-------------------- */
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 70px 20px;
   }
 
-  .hero h1 {
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stat h3 {
     font-size: 32px;
   }
 }
